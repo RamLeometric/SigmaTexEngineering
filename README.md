@@ -21,6 +21,12 @@ Set in Vercel → Project → Settings → Environment Variables, then redeploy:
 
 Optional: `SMTP_HOST` (default `smtp.gmail.com`), `SMTP_PORT` (default `465`), `SEND_AUTOREPLY=false` to stop the confirmation email to customers.
 
+## Important: project root
+`index.html`, `vercel.json` and the `api/` folder must be at the **top level** of what Vercel deploys.
+If your GitHub repository contains a `sigmatex-vercel/` folder instead, open Vercel → Project → Settings → General →
+**Root Directory**, set it to `sigmatex-vercel`, and redeploy. (The pages now use relative paths, so the design loads
+either way — but the contact-form function only runs when the root is set correctly.)
+
 ## Deploy — option A: Vercel CLI
 ```
 cd sigmatex-vercel
