@@ -1,0 +1,9 @@
+{
+  "name": "sigmatex-engineering-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sigma Tex Engineering website — static pages + contact form function for Vercel",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
